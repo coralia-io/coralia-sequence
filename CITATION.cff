@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "The Coralia Sequence: Cascade Triple Enumeration"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - name: "Coralia.io Contributors"
+repository-code: "https://github.com/coralia-io/coralia-sequence"
+url: "https://github.com/coralia-io/coralia-sequence"
+abstract: >-
+  The Coralia Sequence is an integer sequence defined by cascade triple
+  enumeration, where each term encodes the minimal non-repeating cascade
+  structure at index n. This repository provides the canonical implementation,
+  verification tools, and mathematical documentation.
+keywords:
+  - integer sequence
+  - combinatorics
+  - number theory
+  - cascade triples
+  - enumeration
+license: MIT
+version: 1.0.0
+date-released: "2025-01-01"
