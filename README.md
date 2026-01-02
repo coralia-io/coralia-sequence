@@ -1,5 +1,7 @@
 # The Coralia Sequence
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18121786.svg)](https://doi.org/10.5281/zenodo.18121786)
+
 A 12-element integer set with Fibonacci-Lucas terminal structure.
 
 ```
@@ -49,3 +51,7 @@ Coralia LLC
 ## License
 
 MIT License. See [LICENSE](LICENSE).
+
+## Citation
+
+Cecile, E. (2026). The Coralia Sequence: A Unique Finite Integer Set Under Fibonacci-Lucas Terminal Constraints (1.1). Zenodo. https://doi.org/10.5281/zenodo.18121786
