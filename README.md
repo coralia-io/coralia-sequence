@@ -2,87 +2,81 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18121786.svg)](https://doi.org/10.5281/zenodo.18121786)
 
-A 12-element integer set with a distinctive gap structure that appears in multiple independent domains.
+A logic kernel for reasoning about stability, collapse, and rhythm in any system.
 
 ```
 C = {0, 1, 2, 3, 5, 7, 9, 12, 15, 23, 30, 35}
+gaps = [1, 1, 1, 2, 2, 2, 3, 3, 8, 7, 5]
 ```
 
 ## What is this?
 
-A mathematically unique sequence built from Fibonacci-Lucas constraints. Proven in the [accompanying paper](https://doi.org/10.5281/zenodo.18121786) to be the unique solution under a specific nine-axiom system.
+A 12-element integer set with a distinctive structure. Proven unique under nine axioms. Validated in sleep architecture, heart rate variability, and music theory.
 
-It also has structural correspondences that practitioners in music, neuroscience, physics, and design may find suggestive.
+Systems have 3 tipping points, not 1. This framework came from physics — angle of repose, Kirkwood gaps, orbital resonance.
 
-## Who is this for?
+## Scope
 
-These are potential application lenses, not claims of empirical validation.
+The math is proven. The convergence points are derived. Domain applications range from validated to testable.
 
-| Audience | Why it might matter |
-|----------|---------------------|
-| Musicians | 12 tones, gap patterns mirror tension/resolution |
-| Neuroscientists | Theta-gamma coupling ratios, sleep stage boundaries |
-| Architects | Golden ratio proportions, spatial intervals |
-| Game Devs | Difficulty curves, loot distribution, level pacing |
-| Generative Artists | Algorithmic patterns, visual rhythm |
-| Vibe Coders | One function, copy-paste, it works |
-| Physicists | Kirkwood gaps, Arnold tongues, resonance |
-| Data Scientists | Reference sequence for gap detection |
-| UX Designers | Spacing and timing that feels natural |
-| Sound Designers | Frequency ratios, beat templates |
-| Writers | 4-zone story structure, non-uniform pacing |
-| Productivity | Time-boxing with natural intervals |
-| Educators | Concrete Fibonacci-Lucas example with proof |
+- For proof → [paper](https://doi.org/10.5281/zenodo.18121786)
+- For tools → `coralia/`
+- For domains → `examples/`
+
+## Install
+
+```bash
+pip install coralia-sequence
+```
+
+Or clone and import directly.
 
 ## Quick Start
 
 ```python
-C = [0, 1, 2, 3, 5, 7, 9, 12, 15, 23, 30, 35]
-gaps = [1, 1, 1, 2, 2, 2, 3, 3, 8, 7, 5]
+from coralia import C, gaps, convergence_points, detect_zone
+
+print(C)                    # The sequence
+print(gaps)                 # The gap pattern
+print(convergence_points)   # The 3 tipping points
+print(detect_zone(17))      # Which zone? → 4
 ```
 
-That is the full object. Use it, test it, remix it.
+## The 3 Convergence Points
 
-## Why these numbers?
+| Point | Value | Role |
+|-------|-------|------|
+| Λ₁ | 6.25 | Zone 1→2 transition |
+| Λ₂ | φ⁶ ≈ 17.944 | 43% cliff — cascade begins |
+| Λ₃ | Q₀ ≈ 21.246 | Shadow threshold |
 
-Four zones. Ascending gaps (1, 2, 3). Then a Fibonacci-Lucas cascade (8, 7, 5).
+All derive from φ³. See [convergence_points.md](docs/convergence_points.md).
 
-| Zone | Start | Gaps | Elements |
-|------|-------|------|----------|
-| 1 | 0 | 1, 1, 1 | 0, 1, 2, 3 |
-| 2 | 3 | 2, 2, 2 | 5, 7, 9 |
-| 3 | 9 | 3, 3 | 12, 15 |
-| 4 | 15 | 8, 7, 5 | 23, 30, 35 |
+## Structure
 
-The terminal triple (8, 7, 5) is the only descending Fibonacci-Lucas triple that sums to 20 with all elements at least 5.
+| Zone | Gaps | Character |
+|------|------|-----------|
+| 1 | 1, 1, 1 | Stable foundation |
+| 2 | 2, 2, 2 | Steady growth |
+| 3 | 3, 3 | Transition |
+| 4 | 8, 7, 5 | Cascade |
 
-Formally proven, computationally verified, and fully documented.
+## Domains
 
-## The Math
+**Validated:** Sleep, HRV, Music
 
-- [Full paper (Zenodo)](https://doi.org/10.5281/zenodo.18121786)
-- [Axioms and proofs](docs/MASTER_DOC.md)
-- [Verification code](code/verification/)
+**Origin:** Physics (planetary resonance, crystallography, quantum)
 
-## Use Cases
+**Testable:** Neural, circadian, linguistics, ecology, urban, visual, dance, film, network, algorithm, compression, learning
 
-### Music
-12 elements matches the chromatic scale. Gap sequence mirrors interval tension.
+See [domains.md](docs/domains.md) for the full map.
 
-### Neuroscience
-5 of 6 known theta-gamma coupling ratios appear in C.
+## Documentation
 
-### Architecture
-φ-derived junctions at positions 3, 9, 15. Golden ratio spacing.
-
-### Game Design
-Non-linear progression: zones 1-3 feel normal, zone 4 explodes.
-
-### Productivity
-Time blocks: 1-1-1 (warmup), 2-2-2 (work), 3-3 (deep), 8-7-5 (wind down).
-
-### Generative Art
-Gap sequence as rhythm: [1, 1, 1, 2, 2, 2, 3, 3, 8, 7, 5]
+- [Axioms](docs/axioms.md)
+- [Convergence Points](docs/convergence_points.md)
+- [Domain Map](docs/domains.md)
+- [For Researchers](docs/for_researchers.md)
 
 ## Citation
 
@@ -90,10 +84,8 @@ Cecile, E. (2026). The Coralia Sequence: A Unique Finite Integer Set Under Fibon
 
 ## Author
 
-**Emma Cecile**
-ORCID: [0009-0008-4120-9309](https://orcid.org/0009-0008-4120-9309)
-Coralia LLC
+Emma Cecile · [ORCID](https://orcid.org/0009-0008-4120-9309) · [Substack](https://coralia.substack.com)
 
 ## License
 
-MIT. Use it for anything.
+MIT
