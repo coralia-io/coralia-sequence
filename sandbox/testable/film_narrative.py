@@ -5,7 +5,7 @@ Status: TESTABLE
 Scene lengths, plot timing, emotional pacing.
 """
 
-from coralia import C, gaps, zones
+from core.coralia import C, gaps, zones
 
 def analyze():
     """Narrative structure analysis."""

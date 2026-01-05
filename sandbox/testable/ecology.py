@@ -5,7 +5,7 @@ Status: TESTABLE
 Species oscillations, predator-prey cycles.
 """
 
-from coralia import C, gaps, zones, convergence_points
+from core.coralia import C, gaps, zones, convergence_points
 
 def analyze():
     """Population dynamics analysis."""

@@ -5,7 +5,7 @@ Status: TESTABLE
 Block sizes, symbol frequency, error correction.
 """
 
-from coralia import C, gaps, zones
+from core.coralia import C, gaps, zones
 
 def analyze():
     """Compression optimization analysis."""

@@ -3,7 +3,7 @@ Music Theory
 Status: VALIDATED (structural correspondence)
 """
 
-from coralia import C, gaps, zones
+from core.coralia import C, gaps, zones
 
 def analyze():
     """Musical structure analysis."""

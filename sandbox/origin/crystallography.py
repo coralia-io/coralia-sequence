@@ -3,7 +3,7 @@ Crystallography
 Status: ORIGIN (quasicrystal structures)
 """
 
-from coralia import C, gaps, convergence_points
+from core.coralia import C, gaps, convergence_points
 
 def analyze():
     """Crystal structure analysis."""

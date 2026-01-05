@@ -5,7 +5,7 @@ Status: TESTABLE
 Checkpoint scheduling, search/sort optimization.
 """
 
-from coralia import C, gaps, zones
+from core.coralia import C, gaps, zones
 
 def analyze():
     """Algorithm timing analysis."""

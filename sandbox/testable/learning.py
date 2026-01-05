@@ -5,7 +5,7 @@ Status: TESTABLE
 Mastery plateaus, spaced repetition.
 """
 
-from coralia import C, gaps, zones
+from core.coralia import C, gaps, zones
 
 def analyze():
     """Learning curve analysis."""

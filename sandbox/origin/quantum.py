@@ -5,7 +5,7 @@ Status: ORIGIN (energy level spacing)
 Cobalt niobate already shows φ in energy ratios.
 """
 
-from coralia import C, gaps, convergence_points
+from core.coralia import C, gaps, convergence_points
 
 def analyze():
     """Quantum energy level analysis."""

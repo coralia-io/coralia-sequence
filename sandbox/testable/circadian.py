@@ -5,7 +5,7 @@ Status: TESTABLE
 Ultradian rhythms within the 24-hour cycle.
 """
 
-from coralia import C, gaps, zones
+from core.coralia import C, gaps, zones
 
 def analyze():
     """Circadian substructure analysis."""

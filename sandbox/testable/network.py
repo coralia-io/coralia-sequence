@@ -5,7 +5,7 @@ Status: TESTABLE
 Node spacing, packet timing, load balancing.
 """
 
-from coralia import C, gaps, zones
+from core.coralia import C, gaps, zones
 
 def analyze():
     """Network architecture analysis."""

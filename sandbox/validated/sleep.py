@@ -3,7 +3,7 @@ Sleep Architecture
 Status: VALIDATED (99.2-99.4 percentile)
 """
 
-from coralia import C, gaps, zones, convergence_points, detect_zone
+from core.coralia import C, gaps, zones, convergence_points, detect_zone
 
 def analyze():
     """Sleep phase analysis using Coralia structure."""

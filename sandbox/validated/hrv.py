@@ -3,7 +3,7 @@ Heart Rate Variability
 Status: VALIDATED
 """
 
-from coralia import C, gaps, zones, detect_zone
+from core.coralia import C, gaps, zones, detect_zone
 
 def analyze():
     """HRV analysis using Coralia structure."""

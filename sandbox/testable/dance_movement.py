@@ -5,7 +5,7 @@ Status: TESTABLE
 Choreography phrasing, gesture timing.
 """
 
-from coralia import C, gaps, zones
+from core.coralia import C, gaps, zones
 
 def analyze():
     """Movement timing analysis."""

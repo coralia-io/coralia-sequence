@@ -5,7 +5,7 @@ Status: TESTABLE
 Proportion systems, spacing, composition.
 """
 
-from coralia import C, gaps, zones
+from core.coralia import C, gaps, zones
 
 def analyze():
     """Visual proportion analysis."""

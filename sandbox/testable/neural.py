@@ -5,7 +5,7 @@ Status: TESTABLE
 Theta-gamma coupling, brainwave phase relationships.
 """
 
-from coralia import C, gaps, zones, convergence_points
+from core.coralia import C, gaps, zones, convergence_points
 
 def analyze():
     """Neural firing pattern analysis."""

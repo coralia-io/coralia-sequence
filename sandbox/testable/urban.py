@@ -5,7 +5,7 @@ Status: TESTABLE
 City expansion phases, infrastructure timing.
 """
 
-from coralia import C, gaps, zones, convergence_points
+from core.coralia import C, gaps, zones, convergence_points
 
 def analyze():
     """Urban growth analysis."""

@@ -5,7 +5,7 @@ Status: ORIGIN (Kirkwood gaps, angle of repose)
 This is where the 3 tipping points framework came from.
 """
 
-from coralia import C, gaps, convergence_points
+from core.coralia import C, gaps, convergence_points
 
 def analyze():
     """Planetary resonance and stability analysis."""
