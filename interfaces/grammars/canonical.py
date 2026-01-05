@@ -1,51 +1,41 @@
 """
-Canonical Grammar
-Formal grammar representation of the Coralia Sequence.
+Canonical expression grammars for Paper 2 testing.
 """
+import math
 
-from core.coralia import C, gaps, zones
+PHI = (1 + math.sqrt(5)) / 2      # Golden ratio
+RHO = 1.3247179572447460          # Plastic constant
+TAU = 1.8392867552141612          # Tribonacci constant
+DELTA_S = 1 + math.sqrt(2)        # Silver ratio
 
-# Canonical forms
-SEQUENCE = tuple(C)
-GAPS = tuple(gaps)
+# e/π-analytic: continuous primitives
+E_PI_ANALYTIC = {
+    'e²': math.e**2,
+    'e^e': math.e**math.e,
+    'e^π': math.e**math.pi,
+    'π²': math.pi**2,
+    '2^π': 2**math.pi,
+    'eπ': math.e * math.pi,
+}
 
-# Zone grammar: (zone_id, gap_value, repetitions)
-ZONE_GRAMMAR = [
-    (1, 1, 3),  # Zone 1: gap=1, repeated 3 times
-    (2, 2, 3),  # Zone 2: gap=2, repeated 3 times
-    (3, 3, 2),  # Zone 3: gap=3, repeated 2 times
-    (4, (8, 7, 5), 1),  # Zone 4: Fibonacci-Lucas cascade
-]
+# Recurrence-defined: powers of dominant roots
+RECURRENCE_DEFINED = {
+    'φ³': PHI**3,
+    'φ⁵': PHI**5,
+    'φ⁷': PHI**7,
+    'ρ⁵': RHO**5,
+    'ρ⁷': RHO**7,
+    'ρ⁹': RHO**9,
+    'ρ¹¹': RHO**11,
+    'τ³': TAU**3,
+    'τ⁴': TAU**4,
+    'τ⁵': TAU**5,
+    'δₛ²': DELTA_S**2,
+    'δₛ³': DELTA_S**3,
+    'δₛ⁴': DELTA_S**4,
+}
 
-# Terminal structure
-TERMINAL_TRIPLE = (8, 7, 5)  # (F6, L4, F5)
-
-def to_grammar_string():
-    """Return formal grammar representation."""
-    parts = []
-    for zone_id, gap, reps in ZONE_GRAMMAR:
-        if isinstance(gap, tuple):
-            parts.append(f"Z{zone_id}:{gap}")
-        else:
-            parts.append(f"Z{zone_id}:{gap}^{reps}")
-    return " ".join(parts)
-
-def validate_structure(sequence):
-    """Validate a sequence matches the Coralia grammar."""
-    if len(sequence) != 12:
-        return False, "Length must be 12"
-    if sequence[0] != 0:
-        return False, "Must start at 0"
-    if sequence[-1] != 35:
-        return False, "Must end at 35"
-
-    # Check gaps match
-    seq_gaps = [sequence[i+1] - sequence[i] for i in range(len(sequence)-1)]
-    if seq_gaps != list(GAPS):
-        return False, f"Gap pattern mismatch"
-
-    return True, "Valid"
-
-if __name__ == "__main__":
-    print(f"Grammar: {to_grammar_string()}")
-    print(f"Valid: {validate_structure(list(C))}")
+# Test domain
+def in_omega(x):
+    """Ω = (4, 35]"""
+    return 4 < x <= 35

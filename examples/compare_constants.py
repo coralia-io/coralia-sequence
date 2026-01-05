@@ -1,47 +1,52 @@
-#!/usr/bin/env python3
 """
 Compare Constants
-Shows how Coralia convergence points relate to mathematical constants.
+See the split: e-based expressions land on C, φ-based avoid it.
 
-Run: PYTHONPATH=/path/to/coralia-sequence python examples/compare_constants.py
+Run: python compare_constants.py
 """
-
 import math
-from core.coralia import C, convergence_points
 
-def main():
-    phi = (1 + math.sqrt(5)) / 2  # Golden ratio
+C = [0, 1, 2, 3, 5, 7, 9, 12, 15, 23, 30, 35]
+PHI = (1 + math.sqrt(5)) / 2
 
-    print("Coralia and Mathematical Constants")
-    print("=" * 50)
-    print()
+def lands_on_C(x):
+    dc = min(abs(x - c) for c in C)
+    de = min(abs(x - e) for e in range(36) if e not in C)
+    return dc < de
 
-    print(f"Golden ratio (phi): {phi:.6f}")
-    print(f"phi^2: {phi**2:.6f}")
-    print(f"phi^3: {phi**3:.6f}")
-    print(f"phi^6: {phi**6:.6f}")
-    print()
+# e-based expressions
+e_based = {
+    'e²': math.e**2,
+    'e^e': math.e**math.e,
+    'e^π': math.e**math.pi,
+    '2^π': 2**math.pi,
+    'eπ': math.e * math.pi,
+}
 
-    print("Convergence points from Coralia:")
-    for name, cp in convergence_points.items():
-        print(f"  {name}: {cp['value']:.6f}")
-        if 'formula' in cp:
-            print(f"         {cp['formula']}")
-    print()
+# φ-based expressions
+phi_based = {
+    'φ³': PHI**3,
+    'φ⁵': PHI**5,
+    'φ⁷': PHI**7,
+}
 
-    # The 43% cliff
-    print("The 43% cliff:")
-    cliff = 15/35
-    print(f"  15/35 = {cliff:.6f} = 3/7")
-    print(f"  This marks the regime change at Zone 4")
-    print()
+print("e-based expressions (continuous):")
+print("-" * 40)
+for name, val in e_based.items():
+    status = "✓ C" if lands_on_C(val) else "✗ not C"
+    print(f"  {name:6} = {val:6.2f} → {status}")
 
-    # Fibonacci-Lucas terminal
-    print("Terminal triple (8, 7, 5):")
-    print("  F6 = 8  (Fibonacci)")
-    print("  L4 = 7  (Lucas)")
-    print("  F5 = 5  (Fibonacci)")
-    print("  Sum: 8 + 7 + 5 = 20")
+e_hits = sum(1 for v in e_based.values() if lands_on_C(v))
+print(f"\n  Hit rate: {e_hits}/{len(e_based)} = {100*e_hits/len(e_based):.0f}%")
 
-if __name__ == "__main__":
-    main()
+print("\n\nφ-based expressions (recurrence):")
+print("-" * 40)
+for name, val in phi_based.items():
+    status = "✓ C" if lands_on_C(val) else "✗ not C"
+    print(f"  {name:6} = {val:6.2f} → {status}")
+
+phi_hits = sum(1 for v in phi_based.values() if lands_on_C(v))
+print(f"\n  Hit rate: {phi_hits}/{len(phi_based)} = {100*phi_hits/len(phi_based):.0f}%")
+
+print("\n" + "=" * 40)
+print("The split: continuous → C, recurrence → not C")

@@ -1,78 +1,36 @@
 # Who This Is For
 
-## Primary Audience
+## If you think you're "not a math person"
 
-### Researchers
-- **Mathematicians** interested in finite integer sequences with structural constraints
-- **Physicists** studying phase transitions and stability thresholds
-- **Biologists** working on circadian rhythms, HRV, or sleep architecture
-- **Musicologists** analyzing interval structures and compositional timing
+This repo is still for you.
 
-### Practitioners
-- **Data scientists** looking for novel classification frameworks
-- **Engineers** designing systems with discrete state transitions
-- **Clinicians** interested in physiological rhythm analysis
+You don't need to understand the proofs to run the experiments.
+Start with `/examples`. See what happens. Explore.
 
-## What You Need
+## If you are a mathematician
 
-### Minimum
-- Basic understanding of sequences and number theory
-- Familiarity with Python (for running examples)
-- Skepticism (this is science, not faith)
+The proofs are in `core/proofs/`.
+The papers are in `core/papers/`.
+The code is faithful to them.
 
-### Helpful
-- Statistics background for validation work
-- Domain expertise for sandbox contributions
-- Comfort with reading mathematical proofs
+## If you are neither
 
-## Getting Started
+That's fine.
 
-### For the Curious (5 minutes)
-```bash
-python examples/landing_demo.py
-```
-Read the output. That's the whole sequence.
+Open `examples/landing_demo.py`. Run it. See a result.
 
-### For the Skeptical (30 minutes)
-```bash
-python core/tests/test_axioms.py
-python core/proofs/verify_uniqueness.py
-```
-Verify the claims yourself.
+Explore.
 
-### For the Serious (ongoing)
-1. Read `docs/MASTER_DOC.md`
-2. Pick a sandbox domain that matches your expertise
-3. Run the domain analysis, evaluate the claims
-4. Contribute findings (positive or negative)
+## If you're building something
 
-## What We're Looking For
+Check `interfaces/` for reusable functions and exports.
+You don't need permission to use them.
 
-### Validation
-- Statistical tests in new domains
-- Negative results (important!)
-- Edge cases that break assumptions
+## If you're exploring applications
 
-### Extension
-- New testable hypotheses in `sandbox/testable/`
-- Interface implementations for other languages
-- Visualization tools
+`sandbox/` has domain experiments at various stages.
+Validated, origin, testable — the status is marked.
 
-### Rigor
-- Proof verification
-- Axiom critique
-- Alternative formalizations
+---
 
-## What We're Not Looking For
-
-- Mystical interpretations
-- Claims of universality
-- Unfalsifiable applications
-- Hype
-
-## Contact
-
-- **Author**: Emma Cecile
-- **ORCID**: 0009-0008-4120-9309
-- **Organization**: Coralia LLC
-- **Issues**: GitHub issue tracker
+**The only prerequisite is curiosity.**

@@ -1,47 +1,34 @@
-#!/usr/bin/env python3
 """
 Landing Demo
-A first look at the Coralia Sequence.
+See where mathematical constants land relative to C.
 
-Run: PYTHONPATH=/path/to/coralia-sequence python examples/landing_demo.py
+Run: python landing_demo.py
 """
+import math
 
-from core.coralia import C, gaps, zones, convergence_points
+# The Coralia Sequence
+C = [0, 1, 2, 3, 5, 7, 9, 12, 15, 23, 30, 35]
 
-def main():
-    print("The Coralia Sequence")
-    print("=" * 50)
-    print()
+def nearest_C(x):
+    return min(C, key=lambda c: abs(c - x))
 
-    # The sequence
-    print(f"C = {C}")
-    print(f"    {len(C)} elements")
-    print()
+def nearest_not_C(x):
+    E = [i for i in range(36) if i not in C]
+    return min(E, key=lambda e: abs(e - x))
 
-    # The gap pattern
-    print(f"Gaps: {gaps}")
-    print("      [1,1,1] [2,2,2] [3,3] [8,7,5]")
-    print("       zone1   zone2  zone3  zone4")
-    print()
+def lands_on(x):
+    dc = abs(x - nearest_C(x))
+    de = abs(x - nearest_not_C(x))
+    return "C" if dc < de else "not C"
 
-    # Zone structure
-    print("Zone structure:")
-    for z in zones:
-        print(f"  Zone {z['zone']}: {z['elements']} (gaps: {z['gaps']})")
-    print()
+# Test some constants
+constants = {
+    'e²': math.e**2,
+    'e^π': math.e**math.pi,
+    'φ⁵': ((1 + math.sqrt(5))/2)**5,
+}
 
-    # Key properties
-    print("Key properties:")
-    print(f"  Sum of elements: {sum(C)} = 142")
-    print(f"  Sum of gaps: {sum(gaps)} = 35")
-    print(f"  Terminal triple: (8, 7, 5) = (F6, L4, F5)")
-    print(f"  43% cliff: 15/35 = 3/7 (regime change)")
-    print()
-
-    # Convergence points
-    print("Convergence points:")
-    for name, cp in convergence_points.items():
-        print(f"  {name}: {cp['value']:.3f} - {cp['role']}")
-
-if __name__ == "__main__":
-    main()
+print("Where do these land?\n")
+for name, val in constants.items():
+    nearest = nearest_C(val) if lands_on(val) == "C" else nearest_not_C(val)
+    print(f"  {name} = {val:.2f} → lands on {nearest} ∈ {lands_on(val)}")
