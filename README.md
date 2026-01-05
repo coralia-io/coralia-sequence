@@ -2,89 +2,75 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18121786.svg)](https://doi.org/10.5281/zenodo.18121786)
 
-A logic kernel for reasoning about stability, collapse, and rhythm in any system.
+## What is this?
+
+A mathematically defined set of integers with unusual structural properties, plus code to reproduce and test those properties.
 
 ```
 C = {0, 1, 2, 3, 5, 7, 9, 12, 15, 23, 30, 35}
-gaps = [1, 1, 1, 2, 2, 2, 3, 3, 8, 7, 5]
 ```
 
-## What is this?
+## Why does it exist?
 
-A 12-element integer set with a distinctive structure. Proven unique under nine axioms. Validated in sleep architecture, heart rate variability, and music theory.
+It began as a pure math question: *Is there a unique 12-element subset of {0,...,35} satisfying certain structural constraints?*
 
-Systems have 3 tipping points, not 1. This framework came from physics — angle of repose, Kirkwood gaps, orbital resonance.
+Yes. Paper 1 proves it.
 
-## Scope
+Paper 2 shows the axioms have predictive content: they predict where certain mathematical constants land when rounded to integers.
 
-The math is proven. The convergence points are derived. Domain applications range from validated to testable.
-
-- For proof → [paper](https://doi.org/10.5281/zenodo.18121786)
-- For tools → `coralia/`
-- For domains → `examples/`
-
-## Install
+## What can I do with it in 5 minutes?
 
 ```bash
-pip install coralia-sequence
+git clone https://github.com/coralia-io/coralia-sequence.git
+cd coralia-sequence
+python examples/landing_demo.py
 ```
 
-Or clone and import directly.
+Output:
+```
+Where do these land?
 
-## Quick Start
-
-```python
-from coralia import C, gaps, convergence_points, detect_zone
-
-print(C)                    # The sequence
-print(gaps)                 # The gap pattern
-print(convergence_points)   # The 3 tipping points
-print(detect_zone(17))      # Which zone? → 4
+  e² = 7.39 → lands on 7 ∈ C
+  e^π = 23.14 → lands on 23 ∈ C
+  φ⁵ = 11.09 → lands on 11 ∈ not C
 ```
 
-## The 3 Convergence Points
+## Where do I go next?
 
-| Point | Value | Role |
-|-------|-------|------|
-| Λ₁ | 6.25 | Zone 1→2 transition |
-| Λ₂ | φ⁶ ≈ 17.944 | 43% cliff — cascade begins |
-| Λ₃ | Q₀ ≈ 21.246 | Shadow threshold |
+| I want... | Go to... |
+|-----------|----------|
+| The math | `core/papers/` |
+| Simple experiments | `examples/` |
+| Domain applications | `sandbox/` |
+| Reusable code | `interfaces/` |
+| To know if this is for me | [WHO_THIS_IS_FOR.md](WHO_THIS_IS_FOR.md) |
 
-All derive from φ³. See [convergence_points.md](docs/convergence_points.md).
+---
 
 ## Structure
 
-| Zone | Gaps | Character |
-|------|------|-----------|
-| 1 | 1, 1, 1 | Stable foundation |
-| 2 | 2, 2, 2 | Steady growth |
-| 3 | 3, 3 | Transition |
-| 4 | 8, 7, 5 | Cascade |
+| Directory | Status | Contents |
+|-----------|--------|----------|
+| `core/` | Authoritative | Library, papers, proofs, tests |
+| `interfaces/` | Reusable | Grammars, classifiers, exports |
+| `sandbox/` | Exploratory | Domain applications |
+| `examples/` | Entry point | Simple demos |
 
-## Domains
+See [SCOPE.md](SCOPE.md)
 
-**Validated:** Sleep, HRV, Music
+---
 
-**Origin:** Physics (planetary resonance, crystallography, quantum)
+## Papers
 
-**Testable:** Neural, circadian, linguistics, ecology, urban, visual, dance, film, network, algorithm, compression, learning
+1. **Paper 1:** Existence and Uniqueness — [DOI](https://doi.org/10.5281/zenodo.18121786)
+2. **Paper 2:** Empirical Content of the Axioms — `core/papers/`
+3. **Paper 3:** Shadow Principle — forthcoming
 
-See [domains.md](docs/domains.md) for the full map.
-
-## Documentation
-
-- [Axioms](docs/axioms.md)
-- [Convergence Points](docs/convergence_points.md)
-- [Domain Map](docs/domains.md)
-- [For Researchers](docs/for_researchers.md)
-
-## Citation
-
-Cecile, E. (2026). The Coralia Sequence: A Unique Finite Integer Set Under Fibonacci-Lucas Terminal Constraints (1.1). Zenodo. https://doi.org/10.5281/zenodo.18121786
+---
 
 ## Author
 
-Emma Cecile · [ORCID](https://orcid.org/0009-0008-4120-9309) · [Substack](https://coralia.substack.com)
+Emma Cecile · [ORCID](https://orcid.org/0009-0008-4120-9309)
 
 ## License
 

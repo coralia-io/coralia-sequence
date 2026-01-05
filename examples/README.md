@@ -1,34 +1,33 @@
 # Examples
 
-Seeds for applying the Coralia Sequence across domains.
+These scripts are intentionally simple.
 
-## Status
+They do not require deep math knowledge.
+They exist so you can see what the Coralia Sequence does.
 
-| File | Status | Notes |
-|------|--------|-------|
-| sleep.py | Validated | 99.2-99.4 percentile |
-| hrv.py | Validated | Cardiac rhythm patterns |
-| music.py | Validated | Structural correspondence |
-| planetary.py | Origin | Kirkwood gaps, angle of repose |
-| crystallography.py | Origin | Quasicrystal structures |
-| quantum.py | Origin | Energy level spacing |
-| neural.py | Testable | Brainwave coupling |
-| circadian.py | Testable | Ultradian rhythms |
-| linguistics.py | Testable | Text structure |
-| ecology.py | Testable | Population oscillations |
-| urban.py | Testable | City growth phases |
-| visual_aesthetics.py | Testable | Proportion systems |
-| dance_movement.py | Testable | Gesture timing |
-| film_narrative.py | Testable | Scene/plot pacing |
-| network.py | Testable | Node spacing |
-| algorithm.py | Testable | Checkpoint scheduling |
-| compression.py | Testable | Block optimization |
-| learning.py | Testable | Spaced repetition |
+## Quick Start
 
-## How to use
-
-These are starting points. Take them further.
-```python
-from examples import sleep
-sleep.analyze()
+```bash
+python landing_demo.py
 ```
+
+Output:
+```
+Where do these land?
+
+  e² = 7.39 → lands on 7 ∈ C
+  e^π = 23.14 → lands on 23 ∈ C
+  φ⁵ = 11.09 → lands on 11 ∈ not C
+```
+
+## Files
+
+| Script | What it does |
+|--------|--------------|
+| `landing_demo.py` | Shows where constants land |
+| `plot_distances.py` | Visualizes distance to C across [0, 35] |
+| `compare_constants.py` | Compares e-based vs φ-based expressions |
+
+## You don't need to modify anything
+
+Just run. See results. Explore.
