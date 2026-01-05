@@ -39,10 +39,10 @@ Where do these land?
 
 | I want... | Go to... |
 |-----------|----------|
-| The math | `core/papers/` |
-| Simple experiments | `examples/` |
-| Domain applications | `sandbox/` |
-| Reusable code | `interfaces/` |
+| The math | [core/papers/](core/papers/) |
+| Simple experiments | [examples/](examples/) |
+| Domain applications | [sandbox/](sandbox/) |
+| Reusable code | [interfaces/](interfaces/) |
 | To know if this is for me | [WHO_THIS_IS_FOR.md](WHO_THIS_IS_FOR.md) |
 
 ---
@@ -63,7 +63,7 @@ See [SCOPE.md](SCOPE.md)
 ## Papers
 
 1. **Paper 1:** Existence and Uniqueness — [DOI](https://doi.org/10.5281/zenodo.18121786)
-2. **Paper 2:** Empirical Content of the Axioms — `core/papers/`
+2. **Paper 2:** Empirical Content of the Axioms — [core/papers/](core/papers/)
 3. **Paper 3:** Shadow Principle — forthcoming
 
 ---
