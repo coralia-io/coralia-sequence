@@ -15,26 +15,20 @@ A 12-element integer set with a distinctive structure. Proven unique under nine 
 
 Systems have 3 tipping points, not 1. This framework came from physics — angle of repose, Kirkwood gaps, orbital resonance.
 
-## Scope
-
-The math is proven. The convergence points are derived. Domain applications range from validated to testable.
-
-- For proof → [paper](https://doi.org/10.5281/zenodo.18121786)
-- For tools → `coralia/`
-- For domains → `examples/`
-
-## Install
-
-```bash
-pip install coralia-sequence
-```
-
-Or clone and import directly.
+**Read first:** [SCOPE.md](SCOPE.md) | [WHO_THIS_IS_FOR.md](WHO_THIS_IS_FOR.md)
 
 ## Quick Start
 
+```bash
+# Run a demo
+PYTHONPATH=. python examples/landing_demo.py
+
+# Verify the axioms
+PYTHONPATH=. python core/tests/test_axioms.py
+```
+
 ```python
-from coralia import C, gaps, convergence_points, detect_zone
+from core.coralia import C, gaps, convergence_points, detect_zone
 
 print(C)                    # The sequence
 print(gaps)                 # The gap pattern
@@ -61,6 +55,27 @@ All derive from φ³. See [convergence_points.md](docs/convergence_points.md).
 | 3 | 3, 3 | Transition |
 | 4 | 8, 7, 5 | Cascade |
 
+## Repository Layout
+
+```
+coralia-sequence/
+├── core/           # Authoritative (do not edit casually)
+│   ├── coralia/    # Python package
+│   ├── papers/     # Published papers
+│   ├── proofs/     # Verification scripts
+│   └── tests/      # Axiom tests
+├── sandbox/        # Exploratory (contribute here)
+│   ├── validated/  # Confirmed domains
+│   ├── origin/     # Where it came from
+│   └── testable/   # Hypotheses to test
+├── examples/       # Entry point demos
+├── interfaces/     # Reusable components
+│   ├── grammars/   # Formal representations
+│   ├── classifiers/# Mapping tools
+│   └── exports/    # Data formats
+└── docs/           # Documentation
+```
+
 ## Domains
 
 **Validated:** Sleep, HRV, Music
@@ -73,6 +88,8 @@ See [domains.md](docs/domains.md) for the full map.
 
 ## Documentation
 
+- [Scope](SCOPE.md)
+- [Who This Is For](WHO_THIS_IS_FOR.md)
 - [Axioms](docs/axioms.md)
 - [Convergence Points](docs/convergence_points.md)
 - [Domain Map](docs/domains.md)
