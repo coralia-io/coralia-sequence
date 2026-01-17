@@ -63,7 +63,7 @@ See [SCOPE.md](SCOPE.md)
 ## Papers
 
 1. **Paper 1:** Existence and Uniqueness — [DOI](https://doi.org/10.5281/zenodo.18121786)
-2. **Paper 2:** Empirical Content of the Axioms — `core/papers/`
+2. **Paper 2:** Empirical Content of the Axioms — [DOI](https://doi.org/10.5281/zenodo.18150002)
 3. **Paper 3:** Shadow Principle — forthcoming
 
 ---
