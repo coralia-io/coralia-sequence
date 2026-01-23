@@ -6,6 +6,14 @@ This file documents the frozen reproducibility artifacts for the Coralia Classif
 
 These files are frozen to ensure reproducibility of the classification result. They should not be modified after publication.
 
+## Paper Files
+
+| Paper | File | DOI |
+|-------|------|-----|
+| I | `Cecile_2026_The_Coralia_Sequence.pdf` | [10.5281/zenodo.18121785](https://doi.org/10.5281/zenodo.18121785) |
+| II | `Cecile_2026_Axioms_That_Predict.pdf` | [10.5281/zenodo.18150002](https://doi.org/10.5281/zenodo.18150002) |
+| III | `Cecile_2026_Aperture.pdf` | [10.5281/zenodo.18346226](https://doi.org/10.5281/zenodo.18346226) |
+
 ## File Checksums (SHA-256)
 
 ```

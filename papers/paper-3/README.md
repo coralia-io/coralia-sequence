@@ -1,6 +1,9 @@
-# Paper III: Minimal Axioms and Classification
+# Paper III: Aperture
 
+**File:** `Cecile_2026_Aperture.pdf`
 **DOI:** [10.5281/zenodo.18346226](https://doi.org/10.5281/zenodo.18346226)
+
+*Aperture: The Geometry of Coralia*
 
 Completes the trilogy by establishing the minimal axiom set required for uniqueness. Tests axiom independence and confirms the classification is tight.
 

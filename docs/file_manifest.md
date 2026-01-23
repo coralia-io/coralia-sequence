@@ -17,12 +17,27 @@ Complete listing of repository contents for the Coralia Classification.
 
 | Path | Description |
 |------|-------------|
+| `papers/Cecile_2026_The_Coralia_Sequence.pdf` | Paper I |
+| `papers/Cecile_2026_Axioms_That_Predict.pdf` | Paper II |
+| `papers/Cecile_2026_Aperture.pdf` | Paper III |
 | `papers/paper-1/README.md` | Paper I summary and links |
-| `papers/paper-1/paper-1.pdf` | Paper I PDF (when available) |
 | `papers/paper-2/README.md` | Paper II summary and links |
-| `papers/paper-2/paper-2.pdf` | Paper II PDF (when available) |
 | `papers/paper-3/README.md` | Paper III summary and links |
-| `papers/paper-3/paper-3.pdf` | Paper III PDF (when available) |
+
+## Appendices (`appendices/`)
+
+| Path | Description |
+|------|-------------|
+| `appendices/Cecile_2026_Appendices_A-H.pdf` | Technical appendices for Papers I–III |
+
+## Documentation (`documentation/`)
+
+| Path | Description |
+|------|-------------|
+| `documentation/Cecile_2026_AYNI.pdf` | Author's year-in notes |
+| `documentation/Cecile_2026_References.pdf` | Consolidated bibliography |
+| `documentation/Cecile_2026_Changelog.pdf` | Version history and errata |
+| `documentation/TRILOGY_ROADMAP.md` | Trilogy roadmap and status |
 
 ## Frozen Reproducibility Artifacts (`frozen/`)
 
@@ -73,7 +88,7 @@ Exploratory domain applications. See `sandbox/README.md` for details.
 - `sandbox/testable/` — Testable predictions
 - `sandbox/origin/` — Origin investigations
 
-## Documentation (`docs/`)
+## Technical Documentation (`docs/`)
 
 | Path | Description |
 |------|-------------|

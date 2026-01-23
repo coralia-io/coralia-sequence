@@ -1,5 +1,6 @@
-# Paper II: Empirical Content of the Axioms
+# Paper II: Axioms That Predict
 
+**File:** `Cecile_2026_Axioms_That_Predict.pdf`
 **DOI:** [10.5281/zenodo.18150002](https://doi.org/10.5281/zenodo.18150002)
 
 Demonstrates that the axioms defining C have predictive content: mathematical constants (e², e^π, etc.) land on C-elements when rounded to nearest integers at rates exceeding chance.

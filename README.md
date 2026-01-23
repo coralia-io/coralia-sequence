@@ -18,11 +18,11 @@ C = {0, 1, 2, 3, 5, 7, 9, 12, 15, 23, 30, 35}
 
 ## Papers
 
-| Paper | Title | DOI |
-|-------|-------|-----|
-| I | Existence and Uniqueness | [10.5281/zenodo.18121785](https://doi.org/10.5281/zenodo.18121785) |
-| II | Empirical Content of the Axioms | [10.5281/zenodo.18150002](https://doi.org/10.5281/zenodo.18150002) |
-| III | Minimal Axioms and Classification | [10.5281/zenodo.18346226](https://doi.org/10.5281/zenodo.18346226) |
+| Paper | Title | File | DOI |
+|-------|-------|------|-----|
+| I | The Coralia Sequence | `Cecile_2026_The_Coralia_Sequence.pdf` | [10.5281/zenodo.18121785](https://doi.org/10.5281/zenodo.18121785) |
+| II | Axioms That Predict | `Cecile_2026_Axioms_That_Predict.pdf` | [10.5281/zenodo.18150002](https://doi.org/10.5281/zenodo.18150002) |
+| III | Aperture | `Cecile_2026_Aperture.pdf` | [10.5281/zenodo.18346226](https://doi.org/10.5281/zenodo.18346226) |
 
 See [`papers/`](papers/) for local copies and supplementary materials.
 
@@ -64,7 +64,9 @@ See [`docs/reproduction.md`](docs/reproduction.md) for detailed instructions and
 
 | Directory | Contents |
 |-----------|----------|
-| `papers/` | Paper PDFs and supplementary materials |
+| `papers/` | Paper PDFs (`Cecile_2026_*.pdf`) |
+| `appendices/` | Technical appendices (`Cecile_2026_Appendices_A-H.pdf`) |
+| `documentation/` | AYNI, References, Changelog, Roadmap |
 | `frozen/` | Reproducibility artifacts (code + data) |
 | `core/` | Library implementation and proofs |
 | `examples/` | Demonstration scripts |
