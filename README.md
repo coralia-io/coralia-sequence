@@ -64,7 +64,52 @@ See [SCOPE.md](SCOPE.md)
 
 1. **Paper 1:** Existence and Uniqueness — [DOI](https://doi.org/10.5281/zenodo.18121786)
 2. **Paper 2:** Empirical Content of the Axioms — [DOI](https://doi.org/10.5281/zenodo.18150002)
-  
+3. **Paper 3:** Uniqueness at Ceiling 35 — DOI pending
+
+---
+
+## Reproducibility (Frozen Paper III Artifacts)
+
+The `core/frozen/` directory contains frozen computational artifacts referenced by Paper III.
+
+### Contents
+
+| File | Description |
+|------|-------------|
+| `enumeration_core.py` | Core enumeration utilities |
+| `ceiling_scan.py` | Exhaustive ceiling=35 scan |
+| `axiom_drop.py` | Axiom necessity analysis |
+| `survivor_tables.csv` | Survivors at each filter layer |
+| `AUDIT_MANIFEST.md` | Artifact documentation |
+| `VERIFY.md` | Verification guide |
+| `checksums.txt` | SHA256 checksums |
+
+### Quick Verification
+
+```bash
+python core/frozen/ceiling_scan.py
+```
+
+Expected:
+```
+Interior candidates: 171
+L1 survivors: 24
+L2 survivors: 4
+L3 survivors: 1
+
+Unique configuration: {0, 1, 2, 3, 5, 7, 9, 12, 15, 23, 30, 35}
+Gap vector: (1, 1, 1, 2, 2, 2, 3, 3, 8, 7, 5)
+```
+
+### Checksum Verification
+
+```bash
+cd core/frozen && sha256sum -c checksums.txt
+```
+
+### Note
+
+Mathematical classification results are independent of empirical validation.
 
 ---
 

@@ -1,0 +1,11 @@
+Ceiling Scan - Paper III Frozen Artifact
+==================================================
+Running ceiling=35 scan...
+
+Interior candidates: 171
+L1 survivors: 24
+L2 survivors: 4
+L3 survivors: 1
+
+Unique configuration: {0, 1, 2, 3, 5, 7, 9, 12, 15, 23, 30, 35}
+Gap vector: (1, 1, 1, 2, 2, 2, 3, 3, 8, 7, 5)

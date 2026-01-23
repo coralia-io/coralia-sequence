@@ -1,0 +1,5 @@
+# Frozen Paper III artifacts: preserve exact bytes
+core/frozen/*.py text eol=lf
+core/frozen/*.md text eol=lf
+core/frozen/*.csv -text
+core/frozen/*.txt text eol=lf
