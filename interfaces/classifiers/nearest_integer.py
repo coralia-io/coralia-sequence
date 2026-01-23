@@ -1,5 +1,5 @@
 """
-Voronoi landing classifier for the Coralia Sequence.
+Voronoi landing classifier for the Coralia set C.
 """
 
 C = [0, 1, 2, 3, 5, 7, 9, 12, 15, 23, 30, 35]

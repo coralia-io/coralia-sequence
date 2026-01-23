@@ -3,7 +3,7 @@
 These scripts are intentionally simple.
 
 They do not require deep math knowledge.
-They exist so you can see what the Coralia Sequence does.
+They exist so you can see what the Coralia set C does.
 
 ## Quick Start
 

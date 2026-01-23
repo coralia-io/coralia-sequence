@@ -21,7 +21,7 @@ plt.figure(figsize=(12, 4))
 plt.plot(xs, ds, 'b-', linewidth=0.8)
 plt.xlabel('Value')
 plt.ylabel('Distance to nearest C element')
-plt.title('The Coralia Sequence: Distance Landscape')
+plt.title('Coralia Classification: Distance Landscape')
 
 # Mark C elements
 for c in C:

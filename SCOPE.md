@@ -2,7 +2,7 @@
 
 ## What This Repository Is
 
-- A mathematically defined object (the Coralia Sequence)
+- A mathematically defined object (the Coralia set C)
 - A verified computational library
 - A reproducible research artifact
 
@@ -31,4 +31,4 @@ Interpretations belong to their authors.
 
 ## Citation
 
-Cecile, E. (2026). The Coralia Sequence. Zenodo. https://doi.org/10.5281/zenodo.18121786
+Cecile, E. (2026). Coralia Classification III: Minimal Axioms and Classification. Zenodo. https://doi.org/10.5281/zenodo.18346226

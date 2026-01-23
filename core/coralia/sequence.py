@@ -33,7 +33,7 @@ convergence_points = {
 
 
 def generate():
-    """Generate the Coralia Sequence from zone definitions."""
+    """Generate the Coralia set C from zone definitions."""
     result = [0]
     for zone in zones:
         current = zone["start"]

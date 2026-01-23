@@ -1,6 +1,6 @@
 # Interfaces
 
-Stable, documented hooks for working with the Coralia Sequence.
+Stable, documented hooks for working with the Coralia set C.
 
 ## Contents
 

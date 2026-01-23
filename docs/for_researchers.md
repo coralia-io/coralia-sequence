@@ -1,6 +1,6 @@
 # For Researchers
 
-How to test the Coralia Sequence in your domain.
+How to test the Coralia Classification in your domain.
 
 ## What is proven
 
@@ -43,7 +43,7 @@ print(result)
 
 ## Citing
 
-Cecile, E. (2026). The Coralia Sequence: A Unique Finite Integer Set Under Fibonacci-Lucas Terminal Constraints (1.1). Zenodo. https://doi.org/10.5281/zenodo.18121786
+Cecile, E. (2026). Coralia Classification III: Minimal Axioms and Classification. Zenodo. https://doi.org/10.5281/zenodo.18346226
 
 ## Contact
 

@@ -6,7 +6,7 @@ Run: python landing_demo.py
 """
 import math
 
-# The Coralia Sequence
+# The Coralia set C
 C = [0, 1, 2, 3, 5, 7, 9, 12, 15, 23, 30, 35]
 
 def nearest_C(x):

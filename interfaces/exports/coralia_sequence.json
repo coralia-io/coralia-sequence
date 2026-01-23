@@ -1,5 +1,5 @@
 {
-  "name": "Coralia Sequence",
+  "name": "Coralia Classification",
   "symbol": "C",
   "elements": [0, 1, 2, 3, 5, 7, 9, 12, 15, 23, 30, 35],
   "cardinality": 12,
@@ -11,5 +11,7 @@
     "Λ₂": 17.944,
     "Λ₃": 21.246
   },
-  "paper_1_doi": "10.5281/zenodo.18121786"
+  "paper_1_doi": "10.5281/zenodo.18121785",
+  "paper_2_doi": "10.5281/zenodo.18150002",
+  "paper_3_doi": "10.5281/zenodo.18346226"
 }

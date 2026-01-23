@@ -1,6 +1,6 @@
 # Axioms
 
-The Coralia Sequence is uniquely determined by nine axioms.
+The Coralia set C is uniquely determined by nine axioms.
 
 ## The Axioms
 

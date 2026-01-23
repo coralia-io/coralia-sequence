@@ -1,6 +1,6 @@
 # Exports
 
-The Coralia Sequence in portable formats.
+The Coralia set C in portable formats.
 
 ## Files
 

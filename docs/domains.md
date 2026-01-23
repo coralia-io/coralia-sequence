@@ -1,6 +1,6 @@
 # Domain Map
 
-Where the Coralia Sequence applies — organized by validation status.
+Where the Coralia set C applies — organized by validation status.
 
 C is not a universal law; it is a finite ratio family that recurs in bounded, discretized systems under constraint.
 
@@ -44,7 +44,7 @@ Domains where discrete, bounded, multi-scale behavior allows direct testing.
 
 ## Key Properties
 
-The Coralia Sequence applies best to systems with:
+The Coralia set C applies best to systems with:
 
 - Discrete state transitions (not continuous flow)
 - Bounded structure (defined ceiling and floor)

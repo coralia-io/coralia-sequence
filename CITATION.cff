@@ -1,11 +1,55 @@
 cff-version: 1.2.0
-message: "If you use this work, please cite it as below."
+message: "If you use this work, please cite Paper III (preferred) or the complete trilogy."
+title: "Coralia Classification (Trilogy Papers I–III)"
 authors:
   - family-names: "Cecile"
     given-names: "Emma"
     orcid: "https://orcid.org/0009-0008-4120-9309"
-title: "The Coralia Sequence"
-version: 1.0.0
-date-released: 2026-01-01
+version: 3.0.0
+date-released: 2026-01-22
 url: "https://github.com/coralia-io/coralia-sequence"
 license: MIT
+repository-code: "https://github.com/coralia-io/coralia-sequence"
+keywords:
+  - classification
+  - combinatorics
+  - axiom systems
+  - reproducibility
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Cecile"
+      given-names: "Emma"
+      orcid: "https://orcid.org/0009-0008-4120-9309"
+  title: "Coralia Classification III: Minimal Axioms and Classification"
+  year: 2026
+  doi: "10.5281/zenodo.18346226"
+  url: "https://doi.org/10.5281/zenodo.18346226"
+references:
+  - type: article
+    authors:
+      - family-names: "Cecile"
+        given-names: "Emma"
+        orcid: "https://orcid.org/0009-0008-4120-9309"
+    title: "Coralia Classification I: Existence and Uniqueness"
+    year: 2026
+    doi: "10.5281/zenodo.18121785"
+    url: "https://doi.org/10.5281/zenodo.18121785"
+  - type: article
+    authors:
+      - family-names: "Cecile"
+        given-names: "Emma"
+        orcid: "https://orcid.org/0009-0008-4120-9309"
+    title: "Coralia Classification II: Empirical Content of the Axioms"
+    year: 2026
+    doi: "10.5281/zenodo.18150002"
+    url: "https://doi.org/10.5281/zenodo.18150002"
+  - type: article
+    authors:
+      - family-names: "Cecile"
+        given-names: "Emma"
+        orcid: "https://orcid.org/0009-0008-4120-9309"
+    title: "Coralia Classification III: Minimal Axioms and Classification"
+    year: 2026
+    doi: "10.5281/zenodo.18346226"
+    url: "https://doi.org/10.5281/zenodo.18346226"

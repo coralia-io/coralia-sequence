@@ -1,24 +1,40 @@
-# The Coralia Sequence
+# Coralia Classification (Trilogy Papers I–III)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18121786.svg)](https://doi.org/10.5281/zenodo.18121786)
+A complete mathematical classification establishing the unique 12-element subset of {0, ..., 35} satisfying a natural axiom system, plus frozen reproducibility artifacts.
 
-## What is this?
+> Formerly known as *coralia-sequence*.
 
-A mathematically defined set of integers with unusual structural properties, plus code to reproduce and test those properties.
+## The Set
 
 ```
 C = {0, 1, 2, 3, 5, 7, 9, 12, 15, 23, 30, 35}
 ```
 
-## Why does it exist?
+## What This Repository Contains
 
-It began as a pure math question: *Is there a unique 12-element subset of {0,...,35} satisfying certain structural constraints?*
+- **Classification result**: The set C is uniquely determined by axioms C1–C9
+- **Frozen reproducibility**: Scripts and data to verify all claims in Papers I–III
+- **Working code**: Library and examples for exploring the classification
 
-Yes. Paper 1 proves it.
+## Papers
 
-Paper 2 shows the axioms have predictive content: they predict where certain mathematical constants land when rounded to integers.
+| Paper | Title | DOI |
+|-------|-------|-----|
+| I | Existence and Uniqueness | [10.5281/zenodo.18121785](https://doi.org/10.5281/zenodo.18121785) |
+| II | Empirical Content of the Axioms | [10.5281/zenodo.18150002](https://doi.org/10.5281/zenodo.18150002) |
+| III | Minimal Axioms and Classification | [10.5281/zenodo.18346226](https://doi.org/10.5281/zenodo.18346226) |
 
-## What can I do with it in 5 minutes?
+See [`papers/`](papers/) for local copies and supplementary materials.
+
+## Trilogy Map
+
+```
+Paper I    →  Discovery: proves exactly one set satisfies C1–C9
+Paper II   →  Empirical content: the axioms predict where constants land
+Paper III  →  Minimality: establishes axiom independence and ceiling necessity
+```
+
+## Quick Start
 
 ```bash
 git clone https://github.com/coralia-io/coralia-sequence.git
@@ -26,52 +42,58 @@ cd coralia-sequence
 python examples/landing_demo.py
 ```
 
-Output:
+## Reproduction
+
+Verify the classification result:
+
+```bash
+python frozen/code/enumeration_core.py    # Output: Solutions: 1
+python frozen/code/ceiling_scan.py        # Shows uniqueness at ceiling=35
+python frozen/code/axiom_drop.py          # Tests axiom independence
 ```
-Where do these land?
 
-  e² = 7.39 → lands on 7 ∈ C
-  e^π = 23.14 → lands on 23 ∈ C
-  φ⁵ = 11.09 → lands on 11 ∈ not C
+Verify file integrity:
+
+```bash
+cd frozen && sha256sum -c ../docs/checksums.txt
 ```
 
-## Where do I go next?
+See [`docs/reproduction.md`](docs/reproduction.md) for detailed instructions and [`frozen/AUDIT_MANIFEST.md`](frozen/AUDIT_MANIFEST.md) for checksums.
 
-| I want... | Go to... |
+## Repository Structure
+
+| Directory | Contents |
 |-----------|----------|
-| The math | `core/papers/` |
-| Simple experiments | `examples/` |
-| Domain applications | `sandbox/` |
-| Reusable code | `interfaces/` |
-| To know if this is for me | [WHO_THIS_IS_FOR.md](WHO_THIS_IS_FOR.md) |
+| `papers/` | Paper PDFs and supplementary materials |
+| `frozen/` | Reproducibility artifacts (code + data) |
+| `core/` | Library implementation and proofs |
+| `examples/` | Demonstration scripts |
+| `interfaces/` | Reusable grammars, classifiers, exports |
+| `sandbox/` | Domain applications (exploratory) |
+| `docs/` | Documentation |
 
----
+## Etymology
 
-## Structure
+*Coralia* derives from Latin *corallium* ("coral") + *-ia*; pronounced /kəˈrɑːliə/ ("Coral-ee-uh").
 
-| Directory | Status | Contents |
-|-----------|--------|----------|
-| `core/` | Authoritative | Library, papers, proofs, tests |
-| `interfaces/` | Reusable | Grammars, classifiers, exports |
-| `sandbox/` | Exploratory | Domain applications |
-| `examples/` | Entry point | Simple demos |
+## Citation
 
-See [SCOPE.md](SCOPE.md)
+```bibtex
+@misc{cecile2026coralia,
+  author = {Cecile, Emma},
+  title = {Coralia Classification (Trilogy Papers I--III)},
+  year = {2026},
+  publisher = {Zenodo},
+  doi = {10.5281/zenodo.18346226}
+}
+```
 
----
-
-## Papers
-
-1. **Paper 1:** Existence and Uniqueness — [DOI](https://doi.org/10.5281/zenodo.18121786)
-2. **Paper 2:** Empirical Content of the Axioms — [DOI](https://doi.org/10.5281/zenodo.18150002)
-  
-
----
-
-## Author
-
-Emma Cecile · [ORCID](https://orcid.org/0009-0008-4120-9309)
+See [`CITATION.cff`](CITATION.cff) for machine-readable citation metadata.
 
 ## License
 
-MIT
+MIT — see [`LICENSE`](LICENSE).
+
+## Author
+
+Emma Cecile · [ORCID 0009-0008-4120-9309](https://orcid.org/0009-0008-4120-9309)

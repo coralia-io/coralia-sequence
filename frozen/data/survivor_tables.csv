@@ -1,0 +1,13 @@
+axiom_dropped,survivor_count,status
+C1,1,dependent
+C2,1,dependent
+C3,1,dependent
+C4,1,dependent
+C5,1,dependent
+C6a,1,dependent
+C6b,1,dependent
+C6c,1,dependent
+C7,6,INDEPENDENT
+C8,2,INDEPENDENT
+C9,6,INDEPENDENT
+none,1,baseline
